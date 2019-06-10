@@ -18,13 +18,13 @@ export function getData(url) {
         .then(response => response.json())
         .then(response => {
             dispatch({
-                type: GET_ARTICLE_SUCCESS,
+                type: GET_DATA_SUCCESS,
                 payload: response,
             })
         })
         .catch(error => {
             dispatch({
-                type: GET_ARTICLE_FAIL,
+                type: GET_DATA_FAIL,
                 payload: error,
             })
         })
